@@ -9,7 +9,10 @@
     body {
       margin: 0;
       font-family: 'Arial', sans-serif;
-      background: linear-gradient(120deg, #2980b9, #6dd5fa, #ffffff);
+      /* Add background image and gradient */
+      background: linear-gradient(120deg, rgba(41, 128, 185, 0.8), rgba(109, 213, 250, 0.8), rgba(255, 255, 255, 0.8)), 
+                  url('lootwalk.webp') no-repeat center center fixed;
+      background-size: cover;
       height: 100vh;
       display: flex;
       justify-content: center;
@@ -19,12 +22,17 @@
     h1 {
       font-size: 4rem;
       margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
     p {
       font-size: 1.5rem;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     }
     .container {
       text-align: center;
+      background-color: rgba(0, 0, 0, 0.5); /* Slight dark overlay behind text */
+      padding: 20px;
+      border-radius: 10px;
     }
     a {
       color: #2980b9;
@@ -43,7 +51,7 @@
 <body>
   <div class="container">
     <h1>Welcome to LootWalk</h1>
-    <p>The adventure starts soon!</p>
+    <p>Your adventure starts here</p>
     <a href="https://github.com/brads59" target="_blank">Explore My GitHub</a>
   </div>
 </body>
