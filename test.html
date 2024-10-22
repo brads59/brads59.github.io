@@ -1,0 +1,20 @@
+<h1>LootWalk GPS Game</h1>
+<p>Move to the correct location to unlock the reward!</p>
+<button onclick="getLocation()">Check My Location</button>
+<p id="status"></p>
+
+<script>
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        document.getElementById("status").innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    document.getElementById("status").innerHTML = "Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
